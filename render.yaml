@@ -1,0 +1,25 @@
+# Render Blueprint — ONE static site that serves all four pages.
+services:
+  - type: web
+    name: occ-bsit-portfolio
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+    routes:
+      # lets /gerome (without the final slash) open the right page
+      - type: rewrite
+        source: /gerome
+        destination: /gerome/index.html
+      - type: rewrite
+        source: /leah
+        destination: /leah/index.html
+      - type: rewrite
+        source: /marvin
+        destination: /marvin/index.html
+    headers:
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=604800

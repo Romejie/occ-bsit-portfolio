@@ -1,0 +1,13 @@
+/*
+Theme Name: OCC Portfolio (Three Members)
+Theme URI: https://example.com/
+Author: OCC BSIT 4th Year
+Description: One website, four pages: a group homepage plus personal portfolios for Gerome Miñoza, Leah Mae Actub and Marvin John Saa. Each portfolio has its own design. All text lives in the inc/data/*.php files and all photos in assets/images/.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+Text Domain: occ-portfolio
+*/
+
+/* The real styles are in assets/css/ (one file per page). */

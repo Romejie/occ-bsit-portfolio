@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# Original, un-optimized photos and the questionnaire export.
+# Keep them on your computer only (they contain personal data and are large).
+Gerome Images/
+Leah Mae Actub Images/
+Marvin Images/
+WORDPRESS PROJECT.csv/
+WORDPRESS PROJECT.csv.zip
+.claude/
